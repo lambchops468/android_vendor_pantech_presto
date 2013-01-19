@@ -151,6 +151,12 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
 
+# wifi fw
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/vendor/firmware/bcm43291.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/vendor/firmware/bcm43291_apsta.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/vendor/firmware/nvram.txt
+
 # HAL
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/sensors.msm8660.so:system/lib/hw/sensors.msm8660.so
