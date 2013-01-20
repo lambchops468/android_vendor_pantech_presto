@@ -153,9 +153,11 @@ PRODUCT_COPY_FILES += \
 
 # wifi fw
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/vendor/firmware/bcm43291.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/vendor/firmware/bcm43291_apsta.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/vendor/firmware/nvram.txt
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
 
 # HAL
 PRODUCT_COPY_FILES += \
