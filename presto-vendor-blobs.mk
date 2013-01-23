@@ -151,14 +151,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
 
-# wifi fw
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
-
 # HAL
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/sensors.msm8660.so:system/lib/hw/sensors.msm8660.so
@@ -200,6 +192,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/geomagneticd:system/bin/geomagneticd \
     $(VENDOR_DEVICE_FOLDER)/bin/orientationd:system/bin/orientationd
 
+# wifi fw
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+
 # sky
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_access_nand.so:system/lib/libsky_access_nand.so \
@@ -214,5 +214,4 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libskyreset.so:system/lib/libskyreset.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
