@@ -76,8 +76,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/qseecomd:system/bin/qseecomd \
     $(VENDOR_DEVICE_FOLDER)/bin/radish:system/bin/radish \
     $(VENDOR_DEVICE_FOLDER)/bin/thermald:system/bin/thermald \
-    $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app
-
+    $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
+    $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild
 # Camera
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
@@ -185,8 +185,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libqmiservices.so:system/lib/libqmiservices.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libqueue.so:system/lib/libqueue.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
-
+    $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libtime_genoff.so:system/lib/libtime_genoff.so
 # Yamaha
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/geomagneticd:system/bin/geomagneticd \
