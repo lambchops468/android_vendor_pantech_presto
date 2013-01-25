@@ -1,10 +1,7 @@
 vendor_pantech_presto
 =====================
 
-Vendor files for Pantech presto device
-<h3>Information and links</h3>
-Works in progress.
-You can find more information at the following links:
-<ul>
-<li>DevsNest website Subforum dedicated to the Pantech Burst: http://www.devsnest.com/forumdisplay.php?fid=12</li>
-</ul>
+Android vendor tree for Pantech Burst P9070 (presto) - Jellybean branch.
+
+### Information
+You can find more information in the [wiki page](https://github.com/PrestoTeam/android_device_pantech_presto/wiki).
