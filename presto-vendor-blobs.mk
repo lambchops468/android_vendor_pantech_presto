@@ -32,15 +32,6 @@ PRODUCT_COPY_FILES += \
 
 # Adreno
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
@@ -78,6 +69,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/thermald:system/bin/thermald \
     $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild
+
 # Camera
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
@@ -140,7 +132,12 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
 
 # gps
 PRODUCT_COPY_FILES += \
@@ -188,10 +185,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libtime_genoff.so:system/lib/libtime_genoff.so
-# Yamaha
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/bin/geomagneticd:system/bin/geomagneticd \
-    $(VENDOR_DEVICE_FOLDER)/bin/orientationd:system/bin/orientationd
 
 # wifi fw
 PRODUCT_COPY_FILES += \
@@ -200,6 +193,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+
+# Yamaha
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/bin/geomagneticd:system/bin/geomagneticd \
+    $(VENDOR_DEVICE_FOLDER)/bin/orientationd:system/bin/orientationd
 
 # sky
 PRODUCT_COPY_FILES += \
