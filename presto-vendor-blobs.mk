@@ -68,8 +68,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/radish:system/bin/radish \
     $(VENDOR_DEVICE_FOLDER)/bin/thermald:system/bin/thermald \
     $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
-    $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild
-
+    $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
+    $(VENDOR_DEVICE_FOLDER)/bin/skytestserver:system/bin/skytestserver \
+#    $(VENDOR_DEVICE_FOLDER)/bin/dbus-daemon:system/bin/dbus-daemon \
+    $(VENDOR_DEVICE_FOLDER)/bin/time_daemon:system/bin/time_daemon 
+    
 # Camera
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
@@ -184,7 +187,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libtime_genoff.so:system/lib/libtime_genoff.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libtime_remote_atom.so:system/lib/libtime_remote_atom.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so
 
 # wifi fw
 PRODUCT_COPY_FILES += \
@@ -213,4 +218,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libskyreset.so:system/lib/libskyreset.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libfotactl.so:system/lib/libfotactl.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libcp-proccmd.so:system/lib/libcp-proccmd.so
