@@ -70,8 +70,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
     $(VENDOR_DEVICE_FOLDER)/bin/skytestserver:system/bin/skytestserver \
-#    $(VENDOR_DEVICE_FOLDER)/bin/dbus-daemon:system/bin/dbus-daemon \
-    $(VENDOR_DEVICE_FOLDER)/bin/time_daemon:system/bin/time_daemon 
+    $(VENDOR_DEVICE_FOLDER)/bin/time_daemon:system/bin/time_daemon
     
 # Camera
 PRODUCT_COPY_FILES += \
@@ -123,8 +122,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/tcp-connections.so:system/lib/tcp-connections.so
 
 # CPU management
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/bin/mpdecision:system/bin/mpdecision
+#PRODUCT_COPY_FILES += \
+#    $(VENDOR_DEVICE_FOLDER)/bin/mpdecision:system/bin/mpdecision
 
 # Firmware
 PRODUCT_COPY_FILES += \
@@ -198,6 +197,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+
+#thermald
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so
 
 # Yamaha
 PRODUCT_COPY_FILES += \
