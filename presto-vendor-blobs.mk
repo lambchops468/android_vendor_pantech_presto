@@ -198,6 +198,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
 
+# wifi/bt helper
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libnv.so:obj/lib/libnv.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:obj/lib/liboncrpc.so
+
 #thermald
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so \
