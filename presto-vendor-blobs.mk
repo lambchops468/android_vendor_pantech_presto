@@ -109,17 +109,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libchromatix_imx074_zsl.so:system/lib/libchromatix_imx074_zsl.so
 
-# Chromium plug-ins
+# Diag
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libdiag.so:system/lib/libdiag.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libnetmonitor.so:system/lib/libnetmonitor.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libtcpfinaggr.so:system/lib/libtcpfinaggr.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/qnet-plugin.so:system/lib/qnet-plugin.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/tcp-connections.so:system/lib/tcp-connections.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libdiag.so:system/lib/libdiag.so
 
 # CPU management
 #PRODUCT_COPY_FILES += \
