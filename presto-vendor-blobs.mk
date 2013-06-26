@@ -25,20 +25,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libnv.so:obj/lib/libnv.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:obj/lib/liboncrpc.so
 
-# Adreno
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libC2D2.so:system/lib/libC2D2.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libgsl.so:system/lib/libgsl.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libOpenVG.so:system/lib/libOpenVG.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -131,14 +117,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libnv.so:system/lib/libnv.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libnv_fusion.so:system/lib/libnv_fusion.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsyslog.so:system/lib/libsyslog.so
-
-# QCOM prebuilts
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libmmparser.so:system/lib/libmmparser.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:system/lib/libqc-opt.so
 
 # Radio
 PRODUCT_COPY_FILES += \
