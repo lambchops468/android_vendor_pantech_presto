@@ -48,12 +48,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/qseecomd:system/bin/qseecomd \
     $(VENDOR_DEVICE_FOLDER)/bin/radish:system/bin/radish \
     $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
+    $(VENDOR_DEVICE_FOLDER)/bin/sapd:system/bin/sapd \
     $(VENDOR_DEVICE_FOLDER)/bin/skytestserver:system/bin/skytestserver \
     $(VENDOR_DEVICE_FOLDER)/bin/time_daemon:system/bin/time_daemon \
     $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app
 
 # Camera
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libCommandSvc.so:system/lib/libCommandSvc.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libconfigdb.so:system/lib/libconfigdb.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
