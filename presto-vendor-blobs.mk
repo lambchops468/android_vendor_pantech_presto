@@ -98,11 +98,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
 
 # GPS
 PRODUCT_COPY_FILES += \
