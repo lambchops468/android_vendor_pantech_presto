@@ -156,6 +156,12 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rawdata.so:system/lib/libsky_rawdata.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so
+    
+# Libs from cm-10.0 needed to start skytestserver
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libbluetooth.so:system/lib/libbluetooth.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libbluedroid.so:system/lib/libbluedroid.so
+   
 
 # Thermald
 PRODUCT_COPY_FILES += \
