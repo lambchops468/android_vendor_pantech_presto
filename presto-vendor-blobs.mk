@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
 
 # Bins
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     $(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
     $(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
     $(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
