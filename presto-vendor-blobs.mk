@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
 
 # Bins
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     $(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
     $(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
     $(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
@@ -138,7 +137,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libtime_remote_atom.so:system/lib/libtime_remote_atom.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
+   $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi_fusion.so:system/lib/liboem_rapi_fusion.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -151,8 +152,15 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libcp-proccmd.so:system/lib/libcp-proccmd.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libfotactl.so:system/lib/libfotactl.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_aprlib.so:system/lib/libsky_aprlib.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rawdata.so:system/lib/libsky_rawdata.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so
+    
+# Libs from cm-10.0 needed to start skytestserver
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libbluetooth.so:system/lib/libbluetooth.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libbluedroid.so:system/lib/libbluedroid.so
+   
 
 # Thermald
 PRODUCT_COPY_FILES += \
