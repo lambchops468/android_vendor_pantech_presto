@@ -108,6 +108,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
 
+# OpenMAX
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
+
 # Misc
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsm.so:system/lib/libdsm.so \
