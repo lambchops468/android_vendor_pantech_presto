@@ -183,3 +183,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+
+# Widevine DRM
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    $(VENDOR_DEVICE_FOLDER)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(VENDOR_DEVICE_FOLDER)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(VENDOR_DEVICE_FOLDER)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(VENDOR_DEVICE_FOLDER)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
